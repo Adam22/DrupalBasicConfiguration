@@ -1,0 +1,62 @@
+@import '../bootstrap-sass/bootstrap.scss';
+@import '../custom-sass/_base.scss';
+body{
+    background-color: #ffffff;
+}
+.logo{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.navbar {
+    background-color: white;
+    border-radius: 0px;
+    border: none;
+    margin-bottom: 0px;
+}
+#navbar{
+
+}
+.nav{
+    float: right;
+}
+.navbar-collapse {
+    padding-right: 0px;
+}
+@include breakpoint(lg){
+    #navbar{
+
+    }
+}
+.uderline-container {
+    border-bottom: 3px solid $blue;
+}
+.navbar-default{
+    .navbar-nav{
+        .active{
+            a {
+                color: white;
+                background-color: $blue;
+            }
+        }
+        li{
+            float: right;
+            a{
+                color:white;
+                background-color: $grey; 
+                border-left: solid 1px white;
+            }
+            a:hover{
+                color: white;
+                background-color: $blue;
+            }
+        }
+    }
+} 
+.secondary{
+    li{
+        a{
+            padding: 10px;
+
+        }
+    }
+}

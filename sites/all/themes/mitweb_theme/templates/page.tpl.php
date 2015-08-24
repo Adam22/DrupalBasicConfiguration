@@ -95,24 +95,20 @@
       </button>
     </div>
 
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+    <?php if (!empty($primary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
-          <?php if (!empty($secondary_nav)): ?>
-            <?php print render($secondary_nav); ?>
-          <?php endif; ?>
-          <?php if (!empty($page['navigation'])): ?>
-            <?php print render($page['navigation']); ?>
-          <?php endif; ?>
         </nav>
       </div>
     <?php endif; ?>
   </div>
-</header>
-
+</header>        
+    <?php if (!empty($secondary_nav)): ?>
+      <?php print render($secondary_nav); ?>
+    <?php endif; ?>
 <div class="main-container container">
 
   <header role="banner" id="page-header">
